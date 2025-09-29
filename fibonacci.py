@@ -13,11 +13,11 @@ while True:
     try:
         terms = int(term_input)
         if terms <= 0:
-            print("Error! Invalid input.")
+            print("Please enter a positive integer.")
         else:
             break
     except ValueError:
-        print("Please enter a positive integer.")
+        print("Error! Invalid input, please enter a valid input.")
 
 #Print the Fibonacci sequence
 #Fibonacci Sequence: 0 1 1 2 3 5 8 13 21 34 55 89 144
