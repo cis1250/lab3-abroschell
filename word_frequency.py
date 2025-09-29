@@ -9,7 +9,8 @@
 
 import re
 
-#This is a function that checks if a text qualifies as a sentence. You do not need to modify this!
+# ... is_sentence function remains unchanged ...
+
 def is_sentence(text):
     # Check if the text is not empty and is a string
     if not isinstance(text, str) or not text.strip():
@@ -33,24 +34,26 @@ user_sentence = input("Enter a sentence: ")
 
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
-    user_input = input("Enter a sentence: ")
+    user_sentence = input("Enter a sentence: ")
 
 # Split the sentence
 split_sentence = user_sentence.split()
 
-# Creating the Lists for the frequencies
-frequencies = []
-word_list = []
+words_list = []
+word_counts = []
 
-#Word Frequencies
+# Word Frequencies
 for word in split_sentence:
     word = word.strip(".,!?").lower()
-    if word in frequencies:
-        word_list[word_list.index(word)]+=1
+    
+   
+    if word in words_list:
+        index = words_list.index(word)
+        word_counts[index] += 1
     else:
-        frequencies.append(word)
-        word_list.append(1)
+        words_list.append(word)
+        word_counts.append(1)
 
-#Print
-for i in range(len(frequencies)):
-    print(f"{frequencies[i]}: {word_list[i]}")
+# Print
+for i in range(len(words_list)):
+    print(f"{words_list[i]}: {word_counts[i]}")
