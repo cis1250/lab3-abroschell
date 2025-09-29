@@ -9,9 +9,9 @@
 #Lab 3 Part 1: Fibonacci Sequence
 # Setting up the loop
 while True: # starts the infintie loop
-    term_input = input("Enter the number of terms: ") # getting the user input for the amount of terms
+    input = input("Enter the number of terms: ") # getting the user input for the amount of terms
     try:
-        terms = int(term_input)
+        terms = int(input)
         if terms <= 0: # checks if it is a non-positive integer
             print("Please enter a positive integer.")
         else:
