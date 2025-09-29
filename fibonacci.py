@@ -20,7 +20,7 @@ while True:
         print("Please enter a positive integer.")
 
 #Print the Fibonacci sequence
-a 0
+a = 0
 b = 1
 for i in range(terms):
     print(a, end=' ')
