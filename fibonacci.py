@@ -10,6 +10,7 @@
 while True:
   term_input = int(input("How many terms of the Fibonacci Sequence do you want printed? : "))
   if term_input > 0:
+    print('User Input {term_input}')
     break
   else:
   print("Error! Invalid input, please try again.")
