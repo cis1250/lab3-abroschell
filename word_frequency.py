@@ -36,6 +36,7 @@ while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_sentence = input("Enter a sentence: ")
 
+
 #PART 2: Word Frequency
 
 # Split the sentence using .split()
