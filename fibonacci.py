@@ -6,22 +6,25 @@
 # Validate that the input is a positive integer.
 # Use a for loop to print the Fibonacci sequence up to that many terms.
 
+#Lab 3 Part 1: Fibonacci Sequence
 # Setting up the loop
 while True:
-  term_input = int(input("How many terms of the Fibonacci Sequence do you want printed? : "))
-  print(f'User Input: {term_input}') 
-  if term_input > 0:
-    break
-  else:
-  print("Error! Invalid input, please try again.")
+    term_input = input("Enter the number of terms: ")
+    try:
+        terms = int(term_input)
+        if terms <= 0:
+            print("Error! Invalid input.")
+        else:
+            break
+    except ValueError:
+        print("Please enter a positive integer.")
 
-a = 0
-b = 1 
-for i in range(term_input):
-  print(a, end= " ")
-  a, b = b, a + b
-  c = a + b
-
+#Print the Fibonacci sequence
+a 0
+b = 1
+for i in range(terms):
+    print(a, end=' ')
+    a, b = b, a + b
           
 
 
