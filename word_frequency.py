@@ -36,23 +36,21 @@ while (is_sentence(user_sentence) == False):
     user_input = input("Enter a sentence: ")
 
 # Split the sentence
-split_sentence = usersentence.split()
+split_sentence = user_sentence.split()
 
 # Creating the Lists for the frequencies
 frequencies = []
 word_list = []
 
 #Word Frequencies
-for word in words:
+for word in split_sentence:
     word = word.strip(".,!?").lower()
-    if word in frequences:
+    if word in frequencies:
         word_list[word_list.index(word)]+=1
     else:
-        word_list.append(word)
+        frequencies.append(word)
         word_list.append(1)
 
 #Print
-print("Word Frequencies:")
 for i in range(len(frequencies)):
-    print(f"{frequences[i]}: {word_list[i]}")
-
+    print(f"{frequencies[i]}: {word_list[i]}")
