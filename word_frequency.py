@@ -40,19 +40,19 @@ split_sentence = usersentence.split()
 
 # Creating the Lists for the frequencies
 frequencies = []
-word_frequen = []
+word_list = []
 
 #Word Frequencies
 for word in words:
-    word = w.strip(".,!?").lower()
+    word = word.strip(".,!?").lower()
     if word in frequences:
-        word_frequen[word_list.index(word)]+=1
+        word_list[word_list.index(word)]+=1
     else:
-        frequences.append(word)
-        word_frequen.append(1)
+        word_list.append(word)
+        word_list.append(1)
 
 #Print
 print("Word Frequencies:")
-for i in range(len(frequencies):
-    print(f"{frequencies[i]: {frequen[i]}")
+for i in range(len(frequencies)):
+    print(f"{frequences[i]}: {word_list[i]}")
 
