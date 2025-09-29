@@ -36,24 +36,27 @@ while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_sentence = input("Enter a sentence: ")
 
-# Split the sentence
+#PART 2: Word Frequency
+
+# Split the sentence using .split()
+# Split seperates each word in the sentence
 split_sentence = user_sentence.split()
 
-words_list = []
-word_counts = []
+words_list = [] #lists
+word_counts = [] #lsits
 
 # Word Frequencies
-for word in split_sentence:
+for word in split_sentence: # starts the loop for all the words in the sentence, does not count punctuation 
     word = word.strip(".,!?").lower()
     
    
-    if word in words_list:
+    if word in words_list: # checks if the word is already in the list ie, to be or not to be (to and be and used twice)
         index = words_list.index(word)
-        word_counts[index] += 1
+        word_counts[index] += 1 # adds 1 to the word frequecncy everytime the word appears
     else:
-        words_list.append(word)
+        words_list.append(word) # adds new words to the list, ones that have not been used yet
         word_counts.append(1)
 
-# Print
-for i in range(len(words_list)):
-    print(f"{words_list[i]}: {word_counts[i]}")
+# Print with a loop
+for i in range(len(words_list)): # this loops x amount of times depending on how many new words are in the sentence 
+    print(f"{words_list[i]}: {word_counts[i]}") # prints the word and the amount of times it appears in the sentence
