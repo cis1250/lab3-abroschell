@@ -10,7 +10,7 @@
 # Setting up the loop
 while True: # starts the infintie loop
     input = input("Enter the number of terms: ") # getting the user input for the amount of terms
-    try:
+    try: # using try to get any errors from the input and then it goes to either the first if or the except error
         terms = int(input)  # takes the input and puts it into an integer
         if terms <= 0: # checks if it is a non-positive integer
             print("Please enter a positive integer.")
