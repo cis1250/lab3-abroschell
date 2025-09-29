@@ -40,7 +40,7 @@ while (is_sentence(user_sentence) == False):
 #PART 2: Word Frequency
 
 # Split the sentence using .split()
-# Split seperates each word in the sentence
+# the split(), Splits a string into a list
 split_sentence = user_sentence.split()
 
 words = [] #lists
