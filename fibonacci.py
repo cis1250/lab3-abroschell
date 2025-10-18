@@ -29,7 +29,7 @@ b = 1
 for i in range(terms): 
     print(a, end=' ')
     a, b = b, a + b # the new value of a becomes b's old value, the new value of b is the old a and b added together [ 0, 1 - a becomes 1, b becomes 1, then a is still one, and b becomes 2]
-          
 
+# grading comments: entering invalid inptut should not break your code. -1
 
 
